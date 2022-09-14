@@ -130,8 +130,7 @@ fun UserCard() {
                                 )
                             }
 
-
-
+                            
                             if (isClicked.value) {
                                 Tooltip(
                                     anchorEdge = AnchorEdge.Top,
@@ -189,7 +188,6 @@ fun UserCard() {
                     shape = RoundedCornerShape(500.dp)
                 ) {
 
-
                     if (isLoading.value.not()) {
                         Image(
                             painter = painterResource(R.drawable.user),
@@ -221,16 +219,13 @@ fun UserCard() {
                         }
                     }
 
-
                 }
-
 
             }
 
         }
 
         AnimatedButton(isLoading)
-
 
     }
 }
@@ -239,8 +234,6 @@ fun UserCard() {
 fun AnimatedButton(isLoading: MutableState<Boolean>) {
     val selected = remember { mutableStateOf(false) }
     val scale = animateFloatAsState(if (selected.value) 0.9f else 1f)
-
-
 
     Card(
         modifier = Modifier
@@ -254,7 +247,6 @@ fun AnimatedButton(isLoading: MutableState<Boolean>) {
                         selected.value = true
 
                     }
-
                     MotionEvent.ACTION_UP -> {
                         selected.value = false
                         isLoading.value = !isLoading.value
