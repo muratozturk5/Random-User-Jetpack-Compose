@@ -130,7 +130,7 @@ fun UserCard() {
                                 )
                             }
 
-                            
+
                             if (isClicked.value) {
                                 Tooltip(
                                     anchorEdge = AnchorEdge.Top,
