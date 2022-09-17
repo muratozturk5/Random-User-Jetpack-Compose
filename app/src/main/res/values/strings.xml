@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">RandomUser</string>
+    <string name="generate_random_user">Generate Random User</string>
+    <string name="error_occurred">Error\nOccurred</string>
+    <string name="user_image">User Image</string>
+    <string name="copy">Copy</string>
 </resources>
