@@ -9,7 +9,7 @@ width="250" hspace="10" vspace="10">
 Jetpack Compose Generate Random User Application Build With Kotlin MVVM (Model - View - ViewModel) Clean Architecture, Beautiful Design UI, Smooth Animations </br>
 Using Tools And Components Supported By Google And By Most Of The Android Development Community</br></br>***Try latest Random User App apk from below 👇***
 
-[![Order Food](https://img.shields.io/badge/Random%20User-APK-brightgreen?style=for-the-badge&logo=android)](https://github.com/muratozturk5/Random-User-Jetpack-Compose/blob/master/APK/random_user.apk)</br></br></br>
+[![Order Food](https://img.shields.io/badge/Random%20User-APK-brightgreen?style=for-the-badge&logo=android)](https://github.com/muratozturk5/Random-User-Jetpack-Compose/raw/master/APK/random_user.apk)</br></br></br>
 
 ## 💻 Used API
 ***Live API URL Check from blow 👇***
