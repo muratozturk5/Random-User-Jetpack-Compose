@@ -66,7 +66,7 @@ Currently providing the following transition patterns:
 - [MVVM (Model - View - ViewModel)](https://developer.android.com/topic/architecture)
 - [Live Data](https://developer.android.com/topic/libraries/architecture/livedata)
 - [Glide](https://github.com/skydoves/landscapist)
-- [Shared Elements](https://github.com/mxalbert1996/compose-shared-elements)
+- [Shared Elements Transition](https://github.com/mxalbert1996/compose-shared-elements)
 - [ToolTip](https://github.com/skgmn/ComposeTooltip)
 - [Shimmer Effect](https://github.com/valentinilk/compose-shimmer)
 - [Retrofit2](https://square.github.io/retrofit)
