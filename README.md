@@ -1,4 +1,4 @@
-![App Screenshot](https://github.com/muratozturk5/Random-User-Jetpack-Compose/blob/master/Screenshots/banner.png)
+![App Screenshot](https://github.com/muratozturk5/Random-User-Jetpack-Compose/blob/master/Screenshots/banner_random_user.png)
 
 
 # Generate Random User Jetpack Compose
@@ -20,11 +20,16 @@ Using Tools And Components Supported By Google And By Most Of The Android Develo
 
 ## 🛠 Built With
 
-## 📷 Screenshots
 
- Categories | Products | Product Detail | Basket 
----- | ---- | ---- | ---- |
-![](https://github.com/muratozturk5/Random-User-Jetpack-Compose/blob/master/Screenshots/main.png) | ![](https://github.com/muratozturk5/Random-User-Jetpack-Compose/blob/master/Screenshots/light_main.png) | ![](https://github.com/muratozturk5/Random-User-Jetpack-Compose/blob/master/Screenshots/image.png) | ![](https://github.com/muratozturk5/Random-User-Jetpack-Compose/blob/master/Screenshots/light_image.png)
+## 📷 Dark Theme Screenshots
+
+![](https://github.com/muratozturk5/Random-User-Jetpack-Compose/blob/master/Screenshots/screenshots_dark.png)
+
+</br>
+
+## 📷 Light Theme Screenshots
+
+![](https://github.com/muratozturk5/Random-User-Jetpack-Compose/blob/master/Screenshots/screenshots_light.png)
 
 </br>
 
