@@ -17,20 +17,38 @@ Using Tools And Components Supported By Google And By Most Of The Android Develo
 </br>
 [https://randomuser.me/api](https://randomuser.me/api)
 </br>
+</br>
+## 💻 Shared Elemet Transition
+<img src="https://github.com/muratozturk5/Random-User-Jetpack-Compose/blob/master/Screenshots/shared_element_gif.gif"   align="left"
+width="240" style="margin-right: 30px;"  vspace="10">
 
-## 🛠 Built With
+<div align="center">
 
-- [MVVM (Model - View - ViewModel)](https://developer.android.com/topic/architecture)
-- [Live Data](https://developer.android.com/topic/libraries/architecture/livedata)
-- [Glide](https://github.com/skydoves/landscapist)
-- [Shared Elements](https://github.com/mxalbert1996/compose-shared-elements)
-- [ToolTip](https://github.com/skgmn/ComposeTooltip)
-- [Shimmer Effect](https://github.com/valentinilk/compose-shimmer)
-- [Retrofit2](https://square.github.io/retrofit)
-- [Coroutines](https://developer.android.com/kotlin/coroutines)
-- [Navigation Component](https://developer.android.com/guide/navigation/navigation-getting-started)
-- [JSON Parsing Gson](https://github.com/google/gson)
-- [Lottie](https://github.com/LottieFiles/lottie-android)
+Originated from [mxalbert1996/compose-shared-elements](https://github.com/mxalbert1996/compose-shared-elements).
+
+Shared elements transition implementation for compose with various customization options.
+Currently providing the following transition patterns:
+ </br></br>
+ Standard shared elements transition
+ </br></br> 
+ [Material container transform](https://material.io/design/motion/the-motion-system.html#container-transform) (which basically mimics the [`MaterialContainerTransform`](https://developer.android.com/reference/com/google/android/material/transition/MaterialContainerTransform) of MDC-Android library)
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</div>
 
 ## 📷 Dark Theme Screenshots
 
@@ -44,6 +62,18 @@ Using Tools And Components Supported By Google And By Most Of The Android Develo
 
 </br>
 
+## 🛠 Built With
+- [MVVM (Model - View - ViewModel)](https://developer.android.com/topic/architecture)
+- [Live Data](https://developer.android.com/topic/libraries/architecture/livedata)
+- [Glide](https://github.com/skydoves/landscapist)
+- [Shared Elements](https://github.com/mxalbert1996/compose-shared-elements)
+- [ToolTip](https://github.com/skgmn/ComposeTooltip)
+- [Shimmer Effect](https://github.com/valentinilk/compose-shimmer)
+- [Retrofit2](https://square.github.io/retrofit)
+- [Coroutines](https://developer.android.com/kotlin/coroutines)
+- [Navigation Component](https://developer.android.com/guide/navigation/navigation-getting-started)
+- [JSON Parsing Gson](https://github.com/google/gson)
+- [Lottie](https://github.com/LottieFiles/lottie-android)
 ## 👨 Developed By 
 
  <img src="https://avatars.githubusercontent.com/u/62841905?s=400&u=6b1f97cf6a3dfe668719000f9686f5fe861f273a&v=4" width="70" align="left">
