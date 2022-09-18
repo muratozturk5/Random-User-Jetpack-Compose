@@ -1,4 +1,4 @@
-![App Screenshot](https://github.com/muratozturk5/Random-User-Jetpack-Compose/blob/master/Screenshots/banner.png)
+![App Screenshot](https://github.com/muratozturk5/Random-User-Jetpack-Compose/blob/master/Screenshots/banner_random_user.png)
 
 
 # Generate Random User Jetpack Compose
@@ -6,8 +6,8 @@
 <img src="https://github.com/muratozturk5/Random-User-Jetpack-Compose/blob/master/Screenshots/icon.png" align="left"
 width="250" hspace="10" vspace="10">
    
-Jetpack Compose Generate Random User Application Build With Kotlin MVVM (Model - View - ViewModel) </br>Clean Architecture, Beautiful Design UI, Smooth Animations </br>
-Using Tools And Components Supported By Google And By Most Of The Android Development Community</br></br>***Try latest Order Food App apk from below 👇***
+Jetpack Compose Generate Random User Application Build With Kotlin MVVM (Model - View - ViewModel) Clean Architecture, Beautiful Design UI, Smooth Animations </br>
+Using Tools And Components Supported By Google And By Most Of The Android Development Community</br></br>***Try latest Random User App apk from below 👇***
 
 [![Order Food](https://img.shields.io/badge/Random%20User-APK-brightgreen?style=for-the-badge&logo=android)](https://github.com/muratozturk5/Random-User-Jetpack-Compose/blob/master/APK/random_user.apk)</br></br></br>
 
@@ -20,11 +20,27 @@ Using Tools And Components Supported By Google And By Most Of The Android Develo
 
 ## 🛠 Built With
 
-## 📷 Screenshots
+- [MVVM (Model - View - ViewModel)](https://developer.android.com/topic/architecture)
+- [Live Data](https://developer.android.com/topic/libraries/architecture/livedata)
+- [Glide](https://github.com/skydoves/landscapist)
+- [Shared Elements](https://github.com/mxalbert1996/compose-shared-elements)
+- [ToolTip](https://github.com/skgmn/ComposeTooltip)
+- [Shimmer Effect](https://github.com/valentinilk/compose-shimmer)
+- [Retrofit2](https://square.github.io/retrofit)
+- [Coroutines](https://developer.android.com/kotlin/coroutines)
+- [Navigation Component](https://developer.android.com/guide/navigation/navigation-getting-started)
+- [JSON Parsing Gson](https://github.com/google/gson)
+- [Lottie](https://github.com/LottieFiles/lottie-android)
 
- Categories | Products | Product Detail | Basket 
----- | ---- | ---- | ---- |
-![](https://github.com/muratozturk5/Random-User-Jetpack-Compose/blob/master/Screenshots/main.png) | ![](https://github.com/muratozturk5/Random-User-Jetpack-Compose/blob/master/Screenshots/light_main.png) | ![](https://github.com/muratozturk5/Random-User-Jetpack-Compose/blob/master/Screenshots/image.png) | ![](https://github.com/muratozturk5/Random-User-Jetpack-Compose/blob/master/Screenshots/light_image.png)
+## 📷 Dark Theme Screenshots
+
+![](https://github.com/muratozturk5/Random-User-Jetpack-Compose/blob/master/Screenshots/screenshots_dark.png)
+
+</br>
+
+## 📷 Light Theme Screenshots
+
+![](https://github.com/muratozturk5/Random-User-Jetpack-Compose/blob/master/Screenshots/screenshots_light.png)
 
 </br>
 
