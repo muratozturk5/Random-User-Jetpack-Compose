@@ -1,4 +1,4 @@
-package com.muratozturk.randomuser.presentation
+package com.muratozturk.randomuser.presentation.userinfo
 
 
 import androidx.lifecycle.MutableLiveData
@@ -14,6 +14,7 @@ class UserInfoViewModel : ViewModel() {
     val userData: MutableLiveData<Result> = repository.userInfoData
     val isLoading: MutableLiveData<Boolean> = repository.isLoading
     val selectedUser = MutableLiveData<String>()
+    val isShowImage = MutableLiveData<Boolean>()
 
     val isErrorOccurred: MutableLiveData<Boolean> = repository.isErrorOccurred
 
@@ -30,7 +31,11 @@ class UserInfoViewModel : ViewModel() {
 
     fun showUserImage(url: String?) {
 
-        selectedUser.value = url
+        isShowImage.value = url != "null"
 
+        if (url != "null") {
+            selectedUser.value = url
+        }
+        
     }
 }

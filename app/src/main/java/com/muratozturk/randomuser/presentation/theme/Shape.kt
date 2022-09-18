@@ -1,4 +1,4 @@
-package com.muratozturk.randomuser.ui.theme
+package com.muratozturk.randomuser.presentation.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

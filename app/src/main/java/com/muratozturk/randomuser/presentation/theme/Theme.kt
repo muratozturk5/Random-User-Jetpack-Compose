@@ -1,4 +1,4 @@
-package com.muratozturk.randomuser.ui.theme
+package com.muratozturk.randomuser.presentation.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
@@ -8,23 +8,17 @@ import androidx.compose.runtime.Composable
 
 private val DarkColorPalette = darkColors(
     primary = DarkPrimaryColor,
-    secondary = DarkLightColor,
-    primaryVariant = DarkTextColor
+    secondary = ToolTip,
+    primaryVariant = DarkTextColor,
+    background = DarkLightColor
 )
 
 private val LightColorPalette = lightColors(
     primary = PrimaryColor,
-    secondary = LightColor,
-    primaryVariant = TextColor
+    secondary = ToolTip,
+    primaryVariant = TextColor,
+    background = LightColor
 
-    /* Other default colors to override
-    background = Color.White,
-    surface = Color.White,
-    onPrimary = Color.White,
-    onSecondary = Color.Black,
-    onBackground = Color.Black,
-    onSurface = Color.Black,
-    */
 )
 
 @Composable

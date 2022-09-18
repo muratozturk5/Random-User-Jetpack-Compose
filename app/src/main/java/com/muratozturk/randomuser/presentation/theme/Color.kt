@@ -1,7 +1,8 @@
-package com.muratozturk.randomuser.ui.theme
+package com.muratozturk.randomuser.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 
+val ToolTip = Color(0xFFCC7A00)
 val Teal200 = Color(0xFF038B7E)
 val PrimaryColor = Color(0xFFE8F0FF)
 val LightColor = Color(0xFFFFFFFF)

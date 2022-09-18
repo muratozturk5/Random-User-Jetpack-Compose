@@ -1,8 +1,6 @@
-package com.muratozturk.randomuser.presentation
+package com.muratozturk.randomuser.presentation.userinfo
 
-import android.annotation.SuppressLint
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.BackHandler
 import androidx.activity.compose.setContent
@@ -26,7 +24,6 @@ import androidx.compose.ui.platform.LocalClipboardManager
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.*
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.github.skgmn.composetooltip.AnchorEdge
 import com.github.skgmn.composetooltip.Tooltip
@@ -34,7 +31,8 @@ import com.muratozturk.randomuser.R
 import com.muratozturk.randomuser.common.*
 import com.muratozturk.randomuser.common.components.AnimatedButton
 import com.muratozturk.randomuser.common.components.ErrorPage
-import com.muratozturk.randomuser.ui.theme.RandomUserTheme
+import com.muratozturk.randomuser.presentation.userimage.UserImage
+import com.muratozturk.randomuser.presentation.theme.RandomUserTheme
 import com.mxalbert.sharedelements.*
 import com.skydoves.landscapist.glide.GlideImage
 import com.valentinilk.shimmer.ShimmerBounds
@@ -48,36 +46,33 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             val selectedUser = viewModel.selectedUser.observeAsState("null")
+            val isShowImage = viewModel.isShowImage.observeAsState(false)
             RandomUserTheme {
                 SharedElementsRoot {
 
-
-                    BackHandler(enabled = selectedUser.value != "null") {
+                    BackHandler(enabled = isShowImage.value != false) {
                         changeUser("null")
                     }
 
                     Surface(
                         modifier = Modifier.fillMaxSize(),
-                        color = MaterialTheme.colors.secondary
+                        color = MaterialTheme.colors.background
                     ) {
 
                         Crossfade(
-                            targetState = selectedUser.value,
+                            targetState = isShowImage.value,
                             animationSpec = tween(durationMillis = TransitionDurationMillis)
                         ) { user ->
 
                             when (user) {
-                                "null" -> UserCard()
+                                false -> UserCard()
                                 else -> UserImage(selectedUser.value)
                             }
                         }
-
                     }
-
 
                 }
             }
-
 
         }
 
@@ -85,10 +80,11 @@ class MainActivity : ComponentActivity() {
 
 }
 
-private fun SharedElementsRootScope.changeUser(url: String) {
+fun SharedElementsRootScope.changeUser(url: String) {
 
     prepareTransition(url)
     viewModel.showUserImage(url)
+
 }
 
 
@@ -195,7 +191,7 @@ fun UserCard() {
                             }
 
                             Divider(
-                                color = MaterialTheme.colors.secondary,
+                                color = MaterialTheme.colors.background,
                                 thickness = 1.dp,
                                 modifier = Modifier.padding(vertical = 15.dp, horizontal = 10.dp)
                             )
@@ -244,7 +240,7 @@ fun UserCard() {
                     if (isErrorOccurred.value) {
                         Row(
                             modifier = Modifier
-                                .size(150.dp)
+                                .size(140.dp)
                                 .clip(CircleShape)
                         ) {
                             ErrorPage()
@@ -252,33 +248,32 @@ fun UserCard() {
                     } else {
                         if (isLoading.value.not()) {
                             val scope = LocalSharedElementsRootScope.current!!
-                            SharedMaterialContainer(
-                                key = "userImage",
-                                screenKey = "userScreen",
-                                shape = CircleShape,
-                                color = Color.Transparent,
-                                transitionSpec = FadeOutTransitionSpec
-                            ) {
+                            Box(modifier = Modifier.padding(10.dp)) {
+                                SharedMaterialContainer(
+                                    key = "userImage",
+                                    screenKey = "userScreen",
+                                    shape = CircleShape,
+                                    color = Color.Transparent,
+                                    transitionSpec = MaterialFadeOutTransitionSpec
+                                ) {
 
-                                GlideImage(
-                                    modifier = Modifier
-                                        .size(150.dp)
-                                        .padding(10.dp)
-                                        .clip(CircleShape)
-                                        .clickable {
-                                            Log.e("viewModelGlobal", "")
-                                            userInfo.value?.picture?.large?.let {
-                                                scope.changeUser(
-                                                    it
-                                                )
-                                            }
+                                    GlideImage(
+                                        modifier = Modifier
+                                            .size(130.dp)
+                                            .clickable {
+                                                userInfo.value?.picture?.large?.let {
+                                                    scope.changeUser(
+                                                        it
+                                                    )
+                                                }
 
-                                        },
-                                    imageModel = userInfo.value?.picture?.large,
-                                    contentDescription = stringResource(R.string.user_image),
-                                    contentScale = ContentScale.Crop
-                                )
+                                            },
+                                        imageModel = userInfo.value?.picture?.large,
+                                        contentDescription = stringResource(R.string.user_image),
+                                        contentScale = ContentScale.Crop
+                                    )
 
+                                }
                             }
 
 
@@ -318,17 +313,3 @@ fun UserCard() {
     }
 }
 
-
-@ExperimentalComposeUiApi
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    RandomUserTheme {
-        Surface(
-            modifier = Modifier.fillMaxSize(),
-            color = MaterialTheme.colors.secondary
-        ) {
-            UserCard()
-        }
-    }
-}

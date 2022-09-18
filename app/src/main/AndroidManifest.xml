@@ -4,7 +4,8 @@
     package="com.muratozturk.randomuser">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -17,7 +18,7 @@
         android:theme="@style/Theme.RandomUser"
         tools:targetApi="31">
         <activity
-            android:name=".presentation.MainActivity"
+            android:name=".presentation.userinfo.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.RandomUser">

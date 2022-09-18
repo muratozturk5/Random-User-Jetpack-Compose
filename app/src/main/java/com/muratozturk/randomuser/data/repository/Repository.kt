@@ -2,7 +2,6 @@ package com.muratozturk.randomuser.data.repository
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
-import com.muratozturk.randomuser.data.models.RandomUser
 import com.muratozturk.randomuser.data.models.Result
 import com.muratozturk.randomuser.data.retrofit.ApiUtils
 import com.muratozturk.randomuser.data.retrofit.UserDaoInterface

@@ -4,4 +4,6 @@
     <string name="error_occurred">Error\nOccurred</string>
     <string name="user_image">User Image</string>
     <string name="copy">Copy</string>
+    <string name="download_image">Download</string>
+    <string name="close">Close</string>
 </resources>

@@ -89,4 +89,5 @@ dependencies {
 
     //Shimmer Effect
     implementation 'com.valentinilk.shimmer:compose-shimmer:1.0.3'
+
 }

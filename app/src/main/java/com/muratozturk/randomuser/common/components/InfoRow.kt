@@ -23,9 +23,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.github.skgmn.composetooltip.AnchorEdge
 import com.github.skgmn.composetooltip.Tooltip
-import com.github.skgmn.composetooltip.TooltipStyle
 import com.muratozturk.randomuser.R
-import com.muratozturk.randomuser.ui.theme.Teal200
+import com.muratozturk.randomuser.presentation.theme.Teal200
 import com.valentinilk.shimmer.ShimmerBounds
 import com.valentinilk.shimmer.rememberShimmer
 import com.valentinilk.shimmer.shimmer
