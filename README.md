@@ -18,7 +18,7 @@ Using Tools And Components Supported By Google And By Most Of The Android Develo
 [https://randomuser.me/api](https://randomuser.me/api)
 </br>
 </br>
-## 💻 Shared Elemet Transition
+## 💻 Shared Elemets Transition
 <img src="https://github.com/muratozturk5/Random-User-Jetpack-Compose/blob/master/Screenshots/shared_element_gif.gif"   align="left"
 width="240" style="margin-right: 30px;"  vspace="10">
 
