@@ -1,5 +1,5 @@
 ![App Screenshot](https://github.com/muratozturk5/Random-User-Jetpack-Compose/blob/master/Screenshots/banner_random_user.png)
-![](https://vbr.wocr.tk/badge?page_id=random-user-generator-android&color=55acb7&style=for-the-badge&logo=Github)
+![](https://komarev.com/ghpvc/?username=random-user-generator-android&color=55acb7&style=for-the-badge&logo=Github&label=Views)
 
 # Generate Random User Jetpack Compose
 
